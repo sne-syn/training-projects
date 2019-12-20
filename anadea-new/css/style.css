@@ -206,15 +206,15 @@ a {
 }
 
 .heading-3 {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     font-size: 18px;
     line-height: 26px;
 }
 
 .list {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -234,4 +234,30 @@ a {
 .blockquote__text {
     margin: 0;
     margin-bottom: 20px;
+}
+
+.crew {
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+.intro {
+    margin-bottom: 50px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.crew__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.crew__member {
+    margin-bottom: 30px;
+}
+
+.crew__name {
+    width: 148px;
 }
