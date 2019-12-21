@@ -188,9 +188,10 @@ a {
     list-style: none;
 }
 
-.menu__link {
+.menu__item a {
     display: block;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .menu__text {
@@ -372,18 +373,23 @@ a {
 }
 
 .expertise__item--3::before {
-    background: #457EC3;
-    mix-blend-mode: normal;
-    opacity: 0.2;
+    top: -5px;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+    background-image: url("../img/expertise-3-top.svg");
+    background-repeat: no-repeat;
 }
 
 .expertise__item--3::after {
-    top: 9px;
-    left: 7px;
-    width: 27.63px;
-    height: 27.63px;
-
-    background: linear-gradient(134.72deg, #8074F2 3.48%, #3C90EC 96.37%);
+    top: 22px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+    background-image: url("../img/expertise-3-bottom.svg");
+    background-repeat: no-repeat;
 }
 
 .expertise__item--4::before {
@@ -401,10 +407,9 @@ a {
     background: #457EC3;
 }
 
-.expertise__item--5::before {
-    background: linear-gradient(180deg, #F2D874 0%, rgba(236, 153, 60, 0.695199) 100%);
-    mix-blend-mode: normal;
-    opacity: 0.35;
+.expertise__item--5 {
+    background-image: url("../img/expertise-5-cylinder.svg");
+    background-repeat: no-repeat;
 }
 
 .offices {
