@@ -425,28 +425,3 @@ a {
     border-radius: 50%;
 }
 
-
-.office__item--pseudo {
-    padding-top: 80px;
-}  
-
-.office__item--pseudo .office__img {
-    position: relative;
-    display: block;
-    border-radius: 50%;
-    background: linear-gradient(180deg, #FFF732 4.4%, #FAE837 103.58%);
-    width: 87.13px;
-    height: 87.13px;
-    font-size: 0;
-}
-
-.office__item--pseudo .office__img::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 87.13px;
-    height: 44px;
-    border-radius: 50% 50% 0 0 / 100% 100% 0 0; 
-    background: linear-gradient(180deg, #53A7F0 4.05%, #3758FA 102.04%)
-}
