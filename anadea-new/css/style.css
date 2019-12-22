@@ -246,40 +246,57 @@ a {
     padding-top: 40px;
     background-color: var(--color-background-tertiary);
     background-image: url("../img/our-values.png");
-    background-position-y: 120px;
+    background-position-y: 40px;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .blockquote__text {
     margin: 0;
-    margin-bottom: 20px;
 }
 
 .crew {
     margin-top: 40px;
+}
+
+.crew__heading,
+.crew__intro {
     padding: 0 20px;
+}
+
+.crew__grid {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .crew__list {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -20px;
+    margin-left: -20px;
 }
 
 .crew__member {
     flex: 0 0 50%;
+    padding: 0 20px 20px;
     max-width: 50%;
-    margin-bottom: 30px;
 }
 
-.crew__role,
-.crew__name {
+.crew__image {
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.crew__member-role,
+.crew__member-name {
     display: block;
     margin: 0;
     padding: 0;
     width: 148px;
 }
 
-.crew__role {
+.crew__member-role {
     color: var(--color-white-opacity);
 }
 
@@ -424,4 +441,3 @@ a {
 .office__img {
     border-radius: 50%;
 }
-
