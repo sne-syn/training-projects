@@ -42,6 +42,7 @@ a {
     color: var(--color-white);
 }
 
+
 .visually-hidden,
 .visually-hidden:not(:focus):not(:active) {
     position: absolute;
@@ -57,6 +58,8 @@ a {
 }
 
 .heading-2 {
+    margin: 0;
+    padding: 0;
     font-size: 28px;
     line-height: 36px;
 }
@@ -257,6 +260,7 @@ a {
 
 .crew {
     margin-top: 40px;
+    margin-bottom: 60px;
 }
 
 .crew__heading,
@@ -264,22 +268,26 @@ a {
     padding: 0 20px;
 }
 
-.crew__grid {
+.grid {
     padding-left: 20px;
     padding-right: 20px;
 }
 
-.crew__list {
+.grid__list {
     display: flex;
     flex-wrap: wrap;
     margin-right: -20px;
     margin-left: -20px;
 }
 
-.crew__member {
+.grid__item {
     flex: 0 0 50%;
-    padding: 0 20px 20px;
     max-width: 50%;
+    padding: 0 20px;
+}
+
+.crew__member {
+    padding-bottom: 20px;
 }
 
 .crew__image {
@@ -340,6 +348,7 @@ a {
 
 .expertise {
     padding: 0 20px;
+    margin-bottom: 60px;
 }
 
 .expertise__item {
@@ -429,15 +438,104 @@ a {
     background-repeat: no-repeat;
 }
 
-.offices {
+.offices__text-block {
     padding: 0 20px;
+    text-align: center;
+}
+
+.offices__intro {
+    padding-bottom: 60px;
+    font-size: 16px;
+    line-height: 26px;
 }
 
 .offices__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
     list-style: none;
-    ;
+}
+
+.offices__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 65px;
 }
 
 .office__img {
     border-radius: 50%;
+    margin: 0 auto 19px;
+}
+
+.office__img--round {
+    display: block;
+    width: 100%;
+    margin-left: 5px;
+}
+
+.office__center {
+    display: block;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.office__direction {
+    text-align: center;
+}
+
+.footer {
+    padding: 0 20px;
+}
+
+.footer,
+.footer a {
+    color: var(--color-white-opacity);
+}
+
+.footer ul {
+
+}
+
+.footer__nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__nav-list-left {
+    margin-right: 20px;
+}
+
+.footer__nav-item {
+    width: 130px;
+}
+
+.footer__facilities-list {
+    width: 117px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.footer__social-list {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__social-item {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer__copyright {
+    margin-bottom: 60px;
 }
