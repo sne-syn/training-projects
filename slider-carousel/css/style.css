@@ -15,12 +15,16 @@
     background: lightgreen;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .carousel__track {
+    position: relative;
+    height: 100%;
     margin: 0;
     padding: 0;
     list-style: none;
+    transition: transform 250ms ease-in;
 }
 
 .carousel__slide {
