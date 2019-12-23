@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vanilla JS Carousel</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="carousel">
+        <button class="carousel__button carousel__button--left">
+            <img src="img/left.svg" alt="Button left">
+        </button>
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="img/slide-1.jpg" alt="Slide 1">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="img/slide-2.jpg" alt="Slide 2">
+                </li>
+                <li class="carousel__slide">
+                    <img class="carousel__image" src="img/slide-3.jpg" alt="Slide 3">
+                </li>
+            </ul>
+        </div>
+        <button class="carousel__button carousel__button--right">
+            <img src="img/right.svg"  alt="Button right">
+        </button>
+        <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+        </div>
+    </div>
+</body>
+
+</html>
