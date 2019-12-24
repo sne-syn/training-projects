@@ -494,9 +494,6 @@ a {
     color: var(--color-white-opacity);
 }
 
-.footer ul {
-
-}
 
 .footer__nav-list {
     display: flex;
@@ -508,9 +505,6 @@ a {
     list-style: none;
 }
 
-.footer__nav-list-left {
-    margin-right: 20px;
-}
 
 .footer__nav-item {
     width: 130px;
