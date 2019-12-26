@@ -173,7 +173,6 @@ a {
     transform: rotate(-43deg);
 }
 
-
 .menu {
     margin: 0 auto;
     padding: 0;
@@ -275,6 +274,12 @@ a {
     padding: 0 20px;
 }
 
+.crew__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .crew__member {
     padding-bottom: 20px;
 }
@@ -326,10 +331,6 @@ a {
     cursor: pointer;
 }
 
-.carousel__indicator:focus {
-    border: 2px solid var(--color-background-tertiary);
-}
-
 .carousel__indicator.current-slide {
     background-color: var(--color-white);
     opacity: 1;
@@ -360,7 +361,6 @@ a {
 .impressions__list {
     margin: 0;
     padding: 0;
-
     list-style: none;
 }
 
