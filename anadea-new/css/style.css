@@ -240,7 +240,7 @@ a {
     min-height: 773px;
     padding-top: 40px;
     background-color: var(--color-background-tertiary);
-    background-image: url("../img/our-values.png");
+    background-image: url("../img/our-values.jpg");
     background-position-y: 40px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -610,9 +610,71 @@ a {
     .nav__toggle {
         display: none;
     }
+
     .nav .nav__toggle {
         display: none;
-      }
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .menu__item--3,
+    .menu__item--5,
+    .menu__text-add {
+        display: none;
+    }
+
+    .menu__item--pink-btn {
+        padding: 10px 14px;
+        border-radius: 4px;
+        background-color: var(--color-bright);
+    }
+
+    .about-us {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .our-experience__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .our-experience__item {
+        max-width: 30%;
+    }
+
+    .values {
+        background-image: url("../img/our-values-tablet.jpg");
+        background-position: -180px 0;
+    }
+
+    .values__blockquote {
+        width: 40%;
+        margin-left: 60%;
+        margin-top: 50px;
+    }
+
+    .blockquote__string {
+        margin-bottom: 5px;
+    }
+
+    .crew {
+        margin-top: 60px;
+    }
+
+    .grid__item {
+        max-width: 33%;
+    }
+
 }
 
 @media (min-width: 991.98px) {
