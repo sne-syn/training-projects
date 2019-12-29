@@ -473,6 +473,8 @@ a {
 
 .footer {
     padding: 0 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer,
@@ -486,6 +488,7 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    order: -2;
     font-size: 16px;
 }
 
@@ -521,6 +524,10 @@ a {
     vertical-align: middle;
 }
 
+.footer__lang {
+    order: -1;
+}
+
 .footer__lang a {
     color: var(--color-white-opacity);
 }
@@ -531,6 +538,10 @@ a {
     font-size: 12px;
     line-height: 18px;
     color: #CECECE;
+}
+
+.footer__award {
+    display: none;
 }
 
 @media (min-width: 575.98px) {
@@ -737,6 +748,48 @@ a {
 
     .offices__item--usa {
         order: 2;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .footer__nav {
+        width: 38%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer__facilities-list {
+        width: 20%;
+        margin-left: auto;
+        margin-bottom: 0;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .footer__social-copyright-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__social-list {
+        margin-bottom: 30px;
+    }
+
+    .footer__award {
+        display: block;
+    }
+
+    .footer__copyright {
+        margin-bottom: 0;
+    }
+
+    .footer__lang {
+        order: 0;
     }
 }
 
