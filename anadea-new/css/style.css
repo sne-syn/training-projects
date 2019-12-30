@@ -778,8 +778,7 @@ a {
     }
 
     .footer__nav-item,
-    .footer__facilities-item
-     {
+    .footer__facilities-item {
         padding-bottom: 10px;
     }
 
@@ -822,10 +821,14 @@ a {
     .intro {
         width: 60%;
     }
-    
+
     .menu__item {
         margin-right: 30px;
-    }    
+    }
+
+    .about-us {
+        width: 70%;
+    }
 
     .impressions__client-img {
         margin-top: 20px;
@@ -833,6 +836,15 @@ a {
 
     .impressions__text-block {
         width: 35%;
+    }
+
+    .values__blockquote {
+        margin-top: 110px;
+        margin-left: 65%;
+    }
+
+    .blockquote__text {
+        width: 250px;
     }
 
     .footer__nav {
@@ -849,5 +861,29 @@ a {
     .section {
         padding-left: calc(50vw - 590px);
         padding-right: calc(50vw - 590px);
+    }
+
+    .menu__item a {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .about-us__heading {
+        font-size: 56px;
+        line-height: 64px;
+    }
+
+    .about-us__text {
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+    .our-experience__list {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .values {
+        background-position: 0 0;
     }
 }
