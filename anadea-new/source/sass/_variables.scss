@@ -1,5 +1,16 @@
-$bg-color: #ffffff;
+$color-white: #ffffff;
+$color-white-opacity: rgba(255, 255, 255, 0.7);
+$color-background-primary: #090909;
+$color-background-secondary: #1b1b1b;
+$color-background-tertiary: #999a9c;
+$color-bright: #dc296c;
 
-body {
-    color: $bg-color;
+
+:root {
+    --color-white: #{$color-white};
+    --color-white-opacity: #{$color-white-opacity};
+    --color-background-primary: #{$color-background-primary};
+    --color-background-secondary: #{$color-background-secondary};
+    --color-background-tertiary: #{$color-background-tertiary};
+    --color-bright: #{$color-bright};
 }
