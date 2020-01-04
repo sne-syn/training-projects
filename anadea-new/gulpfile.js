@@ -1,22 +1,35 @@
 'use strict';
 
 var gulp = require('gulp');
+var del = require('del');
 var plumber = require('gulp-plumber');
 var sourcemap = require('gulp-sourcemaps');
 var rename = require('gulp-rename');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var csso = require('gulp-csso');
-
-var imagemin = require('gulp-imagemin');
-var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
-var concat = require('gulp-concat');
-var server = require('browser-sync').create();
+var imagemin = require('gulp-imagemin');
 
 gulp.task('message', function (done) {
     done();
     return console.log('Gulp is running...');
+});
+
+gulp.task('clean', function () {
+    return del('build');
+});
+
+
+gulp.task('copy', function () {
+    return gulp.src([
+            'source/img/**',
+            'source/js/**',
+            'source/*.ico'
+        ], {
+            base: 'source'
+        })
+        .pipe(gulp.dest('build'));
 });
 
 // copy all HTML files
@@ -36,37 +49,34 @@ gulp.task('imageMin', function (done) {
 
 gulp.task('css', function () {
     return gulp.src('source/sass/style.scss')
-      .pipe(plumber())
-      .pipe(sourcemap.init())
-      .pipe(sass())
-      .pipe(postcss([
-        autoprefixer()
-      ]))
-      .pipe(rename('style.css'))
-      .pipe(gulp.dest('build/css'))
-      .pipe(csso())
-      .pipe(rename({ suffix: '-min' }))
-      .pipe(sourcemap.write('.'))
-      .pipe(gulp.dest('build/css'));
-  });
-
-// concat JS 
-
-gulp.task('scripts', function (done) {
-    gulp.src('source/js/*.js')
-        .pipe(concat('script.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('build/js'));
-    done();
+        .pipe(plumber())
+        .pipe(sourcemap.init())
+        .pipe(sass())
+        .pipe(postcss([
+            autoprefixer()
+        ]))
+        .pipe(rename('style.css'))
+        .pipe(gulp.dest('build/css'))
+        .pipe(csso())
+        .pipe(rename({
+            suffix: '-min'
+        }))
+        .pipe(sourcemap.write('.'))
+        .pipe(gulp.dest('build/css'));
 });
 
-gulp.task('default', gulp.series('message', 'copyHtml', 'imageMin', 'css', 'scripts'));
+gulp.task('default', gulp.series(
+    'message',
+    'clean',
+    'copy',
+    'copyHtml',
+    'imageMin',
+    'css'
+));
 
 // watch changes
 gulp.task('watch', function () {
-    gulp.watch('src/js/*.js',  gulp.series('scripts'));
     gulp.watch('source/sass/**/*.{scss,sass}', gulp.series('css'));
     gulp.watch('source//img/*', gulp.series('imageMin'));
     gulp.watch('source/*.html', gulp.series('copyHtml'));
-  });
-  
+});
