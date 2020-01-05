@@ -1,0 +1,20 @@
+.blockquote {
+    @include indents();
+}
+
+.blockquote__text {
+    @include indents();
+    margin-bottom: 20px;
+}
+
+@media (min-width: 767.98px) {
+    .blockquote__string {
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 991.98px) {
+    .blockquote__text {
+        width: 250px;
+    }
+}

@@ -1,0 +1,41 @@
+.values {
+    min-height: 773px;
+    padding-top: 40px;
+    background-color: var(--color-background-tertiary);
+    background-image: url("../img/our-values.jpg");
+    background-position-y: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 575.98px) {
+    .values {
+        background-position-y: -100px;
+    }
+}
+
+@media (min-width: 767.98px) {
+    .values {
+        background-image: url("../img/our-values-tablet.jpg");
+        background-position: -180px 0;
+    }
+
+    .values__blockquote {
+        width: 40%;
+        margin-left: 60%;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 991.98px) {
+    .values__blockquote {
+        margin-top: 110px;
+        margin-left: 65%;
+    }
+}
+
+@media (min-width: 1199.98px) {
+    .values {
+        background-position: 0 0;
+    }
+}

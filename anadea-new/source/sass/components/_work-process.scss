@@ -1,0 +1,23 @@
+.work-process {
+    @include indents();
+    padding: 0 20px;
+}
+
+@media (min-width: 767.98px) {
+    .work-process__intro {
+        width: 62%;
+    }
+
+    .work-process__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .work-process__item {
+        width: 31%;
+        font-size: 16px;
+        line-height: 26px;
+    }
+}

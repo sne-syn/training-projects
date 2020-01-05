@@ -1,0 +1,10 @@
+
+.list {
+    @include list-reset();
+}
+
+.list__text {
+    @include indents();
+    margin-bottom: 40px;
+    color: var(--color-white-opacity);
+}

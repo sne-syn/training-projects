@@ -1,0 +1,35 @@
+.our-experience {
+    @include indents();
+    padding: 0 20px;
+}
+
+.our-experience__heading {
+    margin-bottom: 40px;
+}
+
+.our-experience__item .list__text {
+    color: var(--color-white);
+}
+
+@media (min-width: 767.98px) {
+    .our-experience__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .our-experience__item {
+        max-width: 30%;
+    }
+}
+
+
+@media (min-width: 1199.98px) {
+    .our-experience__list {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+

@@ -1,0 +1,20 @@
+$color-white: #ffffff;
+$color-white-opacity: rgba(255, 255, 255, 0.7);
+$color-background-primary: #090909;
+$color-background-secondary: #1b1b1b;
+$color-background-tertiary: #999a9c;
+$color-bright: #dc296c;
+
+$width-XS: 576px;
+$width-S: 768px;
+$width-M: 992px;
+$width-L: 1200px;
+
+:root {
+    --color-white: #{$color-white};
+    --color-white-opacity: #{$color-white-opacity};
+    --color-background-primary: #{$color-background-primary};
+    --color-background-secondary: #{$color-background-secondary};
+    --color-background-tertiary: #{$color-background-tertiary};
+    --color-bright: #{$color-bright};
+}

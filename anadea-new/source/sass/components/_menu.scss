@@ -1,0 +1,71 @@
+
+.menu {
+    @include indents();
+    margin: 0 auto;
+}
+
+.menu__item {
+    padding: 10px 0;
+    text-align: left;
+    list-style: none;
+}
+
+.menu__item a {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.menu__text {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1.7px;
+    color: var(--color-white);
+}
+
+.menu.menu--opened {
+    padding-top: 10px;
+}
+
+.menu__item.menu__item--industries {
+    display: none;
+}
+
+@media (min-width: 767.98px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .menu__item--3,
+    .menu__item--5,
+    .menu__text-add {
+        display: none;
+    }
+
+    .menu__item {
+        margin-right: 10px;
+    }
+
+    .menu__item--pink-btn {
+        margin-left: auto;
+        padding: 10px 14px;
+        border-radius: 4px;
+        background-color: var(--color-bright);
+    }
+}
+
+@media (min-width: 991.98px) {
+    .menu__item {
+        margin-right: 30px;
+    }
+}
+
+@media (min-width: 1199.98px) {
+
+    .menu__item a {
+        font-size: 17px;
+        line-height: 20px;
+    }
+}
