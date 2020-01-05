@@ -7,6 +7,10 @@
     margin-bottom: 40px;
 }
 
+.our-experience__list {
+    @include list-reset();
+}
+
 .our-experience__item .list__text {
     color: var(--color-white);
 }

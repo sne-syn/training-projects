@@ -1,3 +1,7 @@
+@import 'utils/mixins';
+@import 'utils/variables';
+@import 'utils/visually-hidden';
+@import 'base/color-palette';
 @import 'base/reset';
 @import 'base/typography';
 @import 'components/about-us';
@@ -20,6 +24,4 @@
 @import 'layout/header';
 @import 'layout/footer';
 @import 'pages/about-us';
-@import 'utils/mixins';
-@import 'utils/variables';
-@import 'utils/visually-hidden';
+

@@ -3,6 +3,10 @@
     padding: 0 20px;
 }
 
+.work-process__list {
+    @include list-reset();
+}
+
 @media (min-width: 767.98px) {
     .work-process__intro {
         width: 62%;
