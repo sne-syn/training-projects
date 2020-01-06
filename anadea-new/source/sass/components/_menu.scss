@@ -1,22 +1,26 @@
-
 .menu {
     @include indents();
     margin: 0 auto;
 }
 
 .menu__item {
-    padding: 10px 0;
+    padding: 15px;
     text-align: left;
     list-style: none;
+
+    &:hover {
+        color: var(--color-white-opacity);
+        background-color: var(--color-bright);
+        border-radius: 6px;
+    }
 }
 
-.menu__item a {
+.menu__item a,
+.menu__active {
     display: block;
+    width: auto;
     margin: 0 auto;
     cursor: pointer;
-}
-
-.menu__text {
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 1.7px;
@@ -48,7 +52,7 @@
         margin-right: 10px;
     }
 
-    .menu__item--pink-btn {
+    .menu__item.menu__item--pink-btn {
         margin-left: auto;
         padding: 10px 14px;
         border-radius: 4px;

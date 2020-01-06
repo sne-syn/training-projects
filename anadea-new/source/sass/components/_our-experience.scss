@@ -11,8 +11,8 @@
     @include list-reset();
 }
 
-.our-experience__item .list__text {
-    color: var(--color-white);
+.our-experience__item {
+    margin-bottom: 50px;
 }
 
 @media (min-width: 767.98px) {

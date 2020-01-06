@@ -1,9 +1,7 @@
 
 .header {
-    @include indents();
     position: relative;
     width: auto;
-    padding: 0 20px;
 }
 
 .header__logo {

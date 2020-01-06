@@ -1,28 +1,44 @@
-body {
+.typo {
     font-size: 14px;
     line-height: 22px;
-    font-family: "StemText", Arial, Helvetica, sans-serif;
+    font-family: "StemText", Arial, sans-serif;
     font-style: normal;
     font-weight: 400;
-    color: var(--color-white);
 }
 
-a {
-    @include link-reset;
-    color: var(--color-white);
+.typo__heading-main {
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
 }
 
-.text-md {
-    font-size: 16px;
-    line-height: 26px;
-}
-
-.heading-2 {
+.typo__heading-2 {
     font-size: 28px;
     line-height: 36px;
 }
 
-.heading-3 {
+.typo__heading-3 {
     font-size: 18px;
     line-height: 26px;
+}
+
+.typo__intro-text {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+@media (min-width: 767.98px) {
+
+}
+
+@media (min-width: 1199.98px) {
+    .typo__heading-main {
+        font-size: 56px;
+        line-height: 64px;
+    }
+
+    .typo__intro-text {
+        font-size: 22px;
+        line-height: 34px;
+    }
 }

@@ -1,6 +1,5 @@
 .impressions__list {
-    @include indents();
-    list-style: none;
+    @include list-reset();
 }
 
 .impressions__item {
