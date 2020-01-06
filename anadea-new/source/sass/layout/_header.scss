@@ -1,16 +1,28 @@
-
 .header {
     position: relative;
     width: auto;
 }
 
 .header__logo {
+    display: block;
     width: 110px;
     padding: 13px 20px;
-    background-color: var(--color-bright);
+    cursor: pointer;
 }
 
-.header__company-name {
-    text-transform: uppercase;
-    letter-spacing: 2px;
+.header__logo-icon {
+    display: none;
+}
+
+@media (min-width: 767.98px) {
+    .header__logo-icon {
+        display: block;
+    }
+}
+
+@media (min-width: 1199.98px) {
+    .header__logo {
+        width: 110px;
+        padding: 60px 20px 13px;
+    }
 }

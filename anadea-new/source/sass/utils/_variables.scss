@@ -1,9 +1,13 @@
 $color-white: #ffffff;
 $color-white-opacity: rgba(255, 255, 255, 0.7);
+
 $color-background-primary: #090909;
 $color-background-secondary: #1b1b1b;
 $color-background-tertiary: #999a9c;
+
 $color-bright: #dc296c;
+$color-bright-hover:#CC1B5D;
+$color-bright-active: #B50B4B;
 
 $width-XS: 576px;
 $width-S: 768px;
@@ -16,5 +20,8 @@ $width-L: 1200px;
     --color-background-primary: #{$color-background-primary};
     --color-background-secondary: #{$color-background-secondary};
     --color-background-tertiary: #{$color-background-tertiary};
+    
     --color-bright: #{$color-bright};
+    --color-bright-hover: #{$color-bright-hover};
+    --color-bright-active: #{$color-bright-active};
 }

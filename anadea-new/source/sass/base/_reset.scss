@@ -10,7 +10,7 @@ html {
 
 body {
     @include indents();
-    min-width: 375px;
+    box-sizing: border-box;
 }
 
 a {

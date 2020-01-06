@@ -1,37 +1,29 @@
 .menu {
-    @include indents();
-    margin: 0 auto;
+    @include list-reset();
+    margin: 0 auto 40px;
 }
 
-.menu__item {
-    padding: 15px;
-    text-align: left;
-    list-style: none;
-
-    &:hover {
-        color: var(--color-white-opacity);
-        background-color: var(--color-bright);
-        border-radius: 6px;
-    }
+.menu li {
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.menu__item a,
-.menu__active {
+.menu__link{
     display: block;
     width: auto;
     margin: 0 auto;
     cursor: pointer;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 1.7px;
-    color: var(--color-white);
 }
 
 .menu.menu--opened {
     padding-top: 10px;
 }
 
-.menu__item.menu__item--industries {
+.menu__item-9  {
+    border: none;
+}
+
+.menu__item-8 {
     display: none;
 }
 
@@ -39,7 +31,13 @@
     .menu {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         align-items: baseline;
+        margin-left: -15px;
+    }
+
+    .menu li {
+        border: none;
     }
 
     .menu__item--3,
@@ -48,15 +46,11 @@
         display: none;
     }
 
-    .menu__item {
-        margin-right: 10px;
-    }
 
-    .menu__item.menu__item--pink-btn {
+    .menu__item--bright a {
         margin-left: auto;
         padding: 10px 14px;
         border-radius: 4px;
-        background-color: var(--color-bright);
     }
 }
 
@@ -67,7 +61,6 @@
 }
 
 @media (min-width: 1199.98px) {
-
     .menu__item a {
         font-size: 17px;
         line-height: 20px;

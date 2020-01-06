@@ -8,12 +8,15 @@
     <title>About Us</title>
     <link href="//db.onlinewebfonts.com/c/478ee5574b65325cfc7cf2f42be6aedb?family=Stem" rel="stylesheet"
         type="text/css" />
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
 </head>
 
 <body class="no-js typo color">
         <svg style="display:none">
     <?xml version="1.0" encoding="UTF-8"?>
+    <svg fill="none" viewBox="0 0 68 33" xmlns="http://www.w3.org/2000/svg" id="icon-logo">
+        <path d="M33.7939 0L0 11.9775V32.6654L33.7939 20.6879L67.5889 32.6654V11.9775L33.7939 0Z" clip-rule="evenodd" fill="#fff" fill-rule="evenodd"/>
+        </svg>
     <svg fill="none" viewBox="0 0 8 16" xmlns="http://www.w3.org/2000/svg" id="icon-fb">
         <path
             d="m4.9928 15.84h-2.9897v-7.9199h-1.9945v-2.7294l1.9945-9e-4 -0.00324-1.608c0-2.2267 0.60822-3.5816 3.2504-3.5816h2.1998v2.7299h-1.3748c-1.0289 0-1.0784 0.38139-1.0784 1.0934l-0.00408 1.3662h2.4727l-0.2915 2.7294-2.1792 9e-4 -2e-3 7.9199z"
@@ -37,28 +40,29 @@
 
     </svg>
     <header class="header container">
-        <div class="header__logo">
-            <span class="header__company-name">Anadea</span>
-        </div>
+        <a class="header__logo color__bright" href="#">
+                <svg class="footer__social-icon" width="63" height="33"><use xlink:href="#icon-logo"></use></svg>
+            <span class="typo__logo">Anadea</span>
+        </a>
         <nav class="nav nav--nojs nav--closed">
             <button class="nav__toggle" type="button"><span class="visually-hidden">Menu</span></button>
-            <ul class="menu menu--closed">
-                <li class="menu__item menu__item--1 menu__text"><a href="blog.html">Blog</a>
+            <ul class="menu menu--closed typo__text">
+                <li class="menu__item-1"><a class="menu__link"  href="blog.html">Blog</a>
                 </li>
-                <li class="menu__item menu__item--2"><a href="team.html">Team</a>
+                <li class="menu__item-2"><a class="menu__link"  href="team.html">Team</a>
                 </li>
-                <li class="menu__item menu__item--3"><a href="team.html">Projects</a>
+                <li class="menu__item-3"><a class="menu__link"  href="team.html">Projects</a>
                 </li>
-                <li class="menu__item menu__item--4"><a href="services.html">Services</a>
+                <li class="menu__item-4"><a class="menu__link" href="services.html">Services</a>
                 </li>
-                <li class="menu__item menu__item--5"><a href="services.html">Solutions</a>
+                <li class="menu__item-5"><a class="menu__link" href="services.html">Solutions</a>
                 </li>
-                <li class="menu__item menu__item--6 menu__item--active"><span class="menu__active">About</span>
+                <li class="menu__item-6"><span class="menu__active menu__link">About</span>
                 </li>
-                <li class="menu__item menu__item--7"><a href="contact-us.html">Contact
+                <li class="menu__item-7"><a class="menu__link" href="contact-us.html">Contact
                             us</a></li>
-                <li class="menu__item menu__item--8"><a href="industries.html">Industries</a></li>
-                <li class="menu__item menu__item-9 menu__item--pink-btn"><a href="quote.html">Get a
+                <li class="menu__item-8"><a class="menu__link" href="industries.html">Industries</a></li>
+                <li class="menu__item-9 menu__item--bright"><a class="menu__link color__menu-bright" href="quote.html">Get a
                             <span class="menu__text-add">free</span>
                             quote</a></li>
             </ul>
@@ -67,7 +71,7 @@
     <main>
         <section class="about-us container">
             <h1 class="about-us__heading typo__heading-main">About Us</h1>
-            <p class="about-us__text typo__intro-text">
+            <p class="about-us__text typo__text">
                 Anadea Inc. was founded in 2000 and since then has grown into an international custom software
                 development services provider. Our customers come to us from all over the world - majority from the USA,
                 Europe and Australia, and some are even from Japan and New Zealand.
@@ -117,7 +121,7 @@
         <section class="crew container">
             <div class="crew__text-block">
                 <h2 class="crew__heading typo__heading-2">Meet our core crew</h2>
-                <p class="crew__intro typo__intro-text intro typo__intro-text">Our clients can be confident about the ability of our software engineers to
+                <p class="crew__intro typo__text intro typo__text">Our clients can be confident about the ability of our software engineers to
                     perform the tasks they assigned to. Each of them is backed up by our team of over 100 experts with
                     all
                     the experience, accumulated during 15+ years in custom software development.</p>
@@ -224,7 +228,7 @@
         <section class="work-process container">
             <div class="work-process__text-block">
                 <h2 class="work-process__heading typo__heading-2">How we work</h2>
-                <p class="work-process__intro typo__intro-text intro typo__intro-text typo__intro typo__intro-text-text">
+                <p class="work-process__intro typo__text intro typo__text typo__intro typo__text-text">
                     We follow the agile development methodology and we are open to changes and new ideas from your side
                     at
                     any stage of the development.
@@ -283,7 +287,7 @@
 
                         <div class="impressions__text-block">
                             <blockquote class="impressions__quote">
-                                <p class="impressions__text typo__intro typo__intro-text-text">Fundamentally, there is no difference between a
+                                <p class="impressions__text typo__intro typo__text-text">Fundamentally, there is no difference between a
                                     programmer (or a
                                     designer or a tester) based in an office in London and one in another part of the
                                     world.
@@ -292,7 +296,7 @@
                                     use
                                     every
                                     day were built ‘offshore’.</p>
-                                <footer class="typo__intro typo__intro-text-text">Matthew Stibbe</footer>
+                                <footer class="typo__intro typo__text-text">Matthew Stibbe</footer>
                             </blockquote>
                             <p class="impressions__note color__text-opacity">with whom we had the pleasure to work on his HR management
                                 system
@@ -307,7 +311,7 @@
                         </picture>
                         <div class="impressions__text-block">
                             <blockquote class="impressions__quote">
-                                <p class="impressions__text typo__intro typo__intro-text-text">Fundamentally, there is no difference between a
+                                <p class="impressions__text typo__intro typo__text-text">Fundamentally, there is no difference between a
                                     programmer (or a
                                     designer or a tester) based in an office in London and one in another part of the
                                     world.
@@ -316,7 +320,7 @@
                                     use
                                     every
                                     day were built ‘offshore’.</p>
-                                <footer class="typo__intro typo__intro-text-text">Matthew Stibbe</footer>
+                                <footer class="typo__intro typo__text-text">Matthew Stibbe</footer>
                             </blockquote>
                             <p class="impressions__note color__text-opacity">with whom we had the pleasure to work on his HR management
                                 system
@@ -331,7 +335,7 @@
                         </picture>
                         <div class="impressions__text-block">
                             <blockquote class="impressions__quote">
-                                <p class="impressions__text typo__intro typo__intro-text-text">Fundamentally, there is no difference between a
+                                <p class="impressions__text typo__intro typo__text-text">Fundamentally, there is no difference between a
                                     programmer (or a
                                     designer or a tester) based in an office in London and one in another part of the
                                     world.
@@ -340,7 +344,7 @@
                                     use
                                     every
                                     day were built ‘offshore’.</p>
-                                <footer class="typo__intro typo__intro-text-text">Matthew Stibbe</footer>
+                                <footer class="typo__intro typo__text-text">Matthew Stibbe</footer>
                             </blockquote>
                             <p class="impressions__note color__text-opacity">with whom we had the pleasure to work on his HR management
                                 system
@@ -354,7 +358,7 @@
             <div class="expertise__text-block">
                 <h2 class="expertise__heading typo__heading-2">Technology
                     expertise</h2>
-                <p class="expertise__intro typo__intro-text intro typo__intro-text">Our technology expertise includes but not limited to:</p>
+                <p class="expertise__intro typo__text intro typo__text">Our technology expertise includes but not limited to:</p>
             </div>
             <ul class="expertise__list">
                 <li class="expertise__item expertise__item--1">
@@ -385,7 +389,7 @@
         <section class="offices container">
             <div class="offices__text-block">
                 <h2 class="offices__heading typo__heading-2">Our offices</h2>
-                <p class="offices__intro intro typo__intro-text">Our customers come to us from all over the world - majority from the
+                <p class="offices__intro intro typo__text">Our customers come to us from all over the world - majority from the
                     USA,
                     Europe and Australia</p>
             </div>

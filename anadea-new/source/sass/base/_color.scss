@@ -8,3 +8,28 @@ a {
     color: var(--color-white-opacity);
 }
 
+.color__bright {
+    background-color: var(--color-bright);
+
+    &:hover {
+        background-color: var(--color-bright-hover);
+    }
+
+    &:active {
+        background-color:var(--color-bright-active);
+    }
+}
+
+@media (min-width: 767.98px) {
+    .color__menu-bright {
+        background-color: var(--color-bright);
+
+        &:hover {
+            background-color: var(--color-bright-hover);
+        }
+
+        &:active {
+            background-color:var(--color-bright-active);
+        }
+    }
+}

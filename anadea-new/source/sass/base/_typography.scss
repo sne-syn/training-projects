@@ -6,25 +6,34 @@
     font-weight: 400;
 }
 
+.typo__logo {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
 .typo__heading-main {
     font-size: 36px;
     line-height: 44px;
+    font-weight: 800;
     text-align: center;
 }
 
 .typo__heading-2 {
     font-size: 28px;
     line-height: 36px;
+    font-weight: 800;
 }
 
 .typo__heading-3 {
     font-size: 18px;
     line-height: 26px;
+    font-weight: 800;
 }
 
-.typo__intro-text {
+.typo__text {
     font-size: 16px;
     line-height: 26px;
+    text-align: left;
 }
 
 @media (min-width: 767.98px) {
