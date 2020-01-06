@@ -58,11 +58,11 @@
 }
 
 @media (max-width: 767px) {
-    .nav--closed .menu__item {
+    .nav--closed .menu {
         display: none;
     }
 
-    .nav--opened .menu__item {
+    .nav--opened .menu {
         display: block;
     }
 }

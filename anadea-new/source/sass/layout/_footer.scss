@@ -1,7 +1,5 @@
-
 .footer {
-    @include indents();
-    padding: 0 20px 40px;
+    margin: 0;
     display: flex;
     flex-direction: column;
 }
@@ -51,10 +49,6 @@
 
 .footer__lang {
     order: -1;
-}
-
-.footer__lang a {
-    color: var(--color-white-opacity);
 }
 
 .footer__copyright {
