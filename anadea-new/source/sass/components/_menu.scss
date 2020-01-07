@@ -25,13 +25,17 @@
 
 @media (min-width: 767.98px) {
     .menu {
+        @include indents();
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: baseline;
+        justify-content: space-between;
+        padding-top: 20px;
     }
 
     .menu__item {
+        @include list-reset();
         border: none;
     }
 
@@ -39,12 +43,6 @@
     .menu__item--5,
     .menu__text-add {
         display: none;
-    }
-
-    .menu__item.menu__item--bright {
-        position: absolute;
-        top: 10px;
-        right: calc(50vw - 340px);
     }
 
     .menu__item--bright a {

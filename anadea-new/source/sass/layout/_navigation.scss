@@ -68,11 +68,12 @@
 }
 
 @media (min-width: 767.98px) {
-    .nav__toggle {
-        display: none;
+    .nav {
+        @include indents();
+        width: 80%;
     }
 
-    .nav .nav__toggle {
+    .nav__toggle {
         display: none;
     }
 }
