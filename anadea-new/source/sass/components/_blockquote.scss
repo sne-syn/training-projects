@@ -7,6 +7,10 @@
     margin-bottom: 20px;
 }
 
+.blockquote__string {
+    @include indents();
+}
+
 @media (min-width: 767.98px) {
     .blockquote__string {
         margin-bottom: 5px;

@@ -1,11 +1,16 @@
 .values {
     min-height: 773px;
-    padding-top: 40px;
-    background-color: var(--color-background-tertiary);
     background-image: url("../img/our-values.jpg");
-    background-position-y: 40px;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.values__blockquote {
+    padding-top: 45px;
+}
+
+.values__blockquote-text {
+    width: 90%;
 }
 
 @media (min-width: 575.98px) {

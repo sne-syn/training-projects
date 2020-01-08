@@ -2,8 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     @include indents();
-    // margin-right: -20px;
-    // margin-left: -20px;
+    margin-right: -20px;
+    margin-left: -20px;
     list-style: none;
 }
 
@@ -14,11 +14,6 @@
 }
 
 @media (min-width: 767.98px) {
-    .grid__list {
-        // margin-right: -20px;
-        // margin-left: -20px;
-    }
-
     .grid__item {
         max-width: 25%;
     }

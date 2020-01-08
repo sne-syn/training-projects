@@ -20,6 +20,14 @@ a {
     }
 }
 
+.color__background-secondary {
+    background-color: var(--color-background-secondary);
+}
+
+.color__background-tertiary {
+    background-color: var(--color-background-tertiary);
+}
+
 @media (min-width: 767.98px) {
     .color__menu-bright {
         background-color: var(--color-bright);
