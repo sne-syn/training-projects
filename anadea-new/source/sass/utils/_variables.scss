@@ -28,12 +28,14 @@ $color-bright-disabled:  rgba(221, 129, 129, 0.5);
 :root {
     --color-white: #{$color-white};
     --color-white-opacity: #{$color-white-opacity};
+    
     --color-primary: #{$color-primary};
+    --color-primary-hover: #{$color-primary-hover};
+    --color-primary-active: #{$color-primary-active};
+
     --color-secondary: #{$color-secondary};
     --color-tertiary: #{$color-tertiary};
 
-    --color-primary-hover: #{$color-primary-hover};
-    --color-primary-active: #{$color-primary-active};
     
     --color-bright: #{$color-bright};
     --color-bright-hover: #{$color-bright-hover};

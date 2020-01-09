@@ -20,7 +20,30 @@ a,
     }
 }
 
-.color__menu {
+// colors for navigation-elements: burger-menu & carousel
+
+.color__toggle-button.nav__toggle::before,
+.color__toggle-button.nav__toggle::after {
+    background-color: var(--color-white);
+    // color for box-shadow
+    color: var(--color-white);
+}
+
+.color__carousel-indicator {
+    background-color: transparent;    
+    border-color: var(--color-white);
+}
+
+.color__carousel-indicator.current-slide {
+    background-color: var(--color-white);
+    opacity: 1;
+}
+
+.color__menu-border .menu__item {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.color__menu-link {
     &:hover {
         background-color: var(--color-primary-hover);
     }
@@ -30,7 +53,7 @@ a,
     }
 }
 
-.color__menu--disabled {
+.color__menu-link--disabled {
     color: var(--color-tertiary);
     &:hover {
         background-color: var(--color-primary);
@@ -57,7 +80,7 @@ a,
 }
 
 @media (min-width: $width-sm) {
-    .color__menu--bright {
+    .color__menu-link--bright {
         background-color: var(--color-bright);
 
         &:hover {

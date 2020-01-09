@@ -18,14 +18,9 @@
     height: 20px;
     opacity: 0.2;
     border-radius: 50%;
-    border: 2px solid var(--color-white);
-    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
     cursor: pointer;
-}
-
-.carousel__indicator.current-slide {
-    background-color: var(--color-white);
-    opacity: 1;
 }
 
 .carousel__track-container {
