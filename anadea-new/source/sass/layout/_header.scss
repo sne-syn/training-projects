@@ -15,14 +15,18 @@
 }
 
 @media (min-width: $width-sm) {
-
     .header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
+
+.header__logo {
+    width: auto;
+}
     .header__logo-icon {
         display: block;
+        margin: 0 auto;
     }
 }
 

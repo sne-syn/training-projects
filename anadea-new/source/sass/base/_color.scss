@@ -1,18 +1,10 @@
-.color,
-a {
+a,
+.color {
     color: var(--color-white);
     background-color: var(--color-primary);
 }
 
-.color__text-opacity {
-    color: var(--color-white-opacity);
-}
-
-.color__text-footer a {
-    color: var(--color-tertiary);
-}
-
-.color__bright {
+.color__logo {
     background-color: var(--color-bright);
 
     &:hover {
@@ -28,6 +20,27 @@ a {
     }
 }
 
+.color__menu {
+    &:hover {
+        background-color: var(--color-primary-hover);
+    }
+
+    &:active {
+        background-color: var(--color-bright);
+    }
+}
+
+.color__menu--disabled {
+    color: var(--color-tertiary);
+    &:hover {
+        background-color: var(--color-primary);
+    }
+
+    &:active {
+        background-color: var(--color-primary);
+    }
+}
+
 .color__secondary {
     background-color: var(--color-secondary);
 }
@@ -36,9 +49,15 @@ a {
     background-color: var(--color-tertiary);
 }
 
+.color__text-opacity {
+    color: var(--color-white-opacity);
+}
+.color__text-footer a {
+    color: var(--color-tertiary);
+}
 
 @media (min-width: $width-sm) {
-    .color__menu-bright {
+    .color__menu--bright {
         background-color: var(--color-bright);
 
         &:hover {
