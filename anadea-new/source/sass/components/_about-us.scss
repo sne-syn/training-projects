@@ -12,9 +12,8 @@
     width: 95%;
 }
 
-@media (min-width: 767.98px) {
+@media (min-width: $width-sm) {
     .about-us {
-        width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -24,10 +23,10 @@
     }
 }
 
-@media (min-width: 991.98px) {
+@media (min-width: $width-md) {
     .about-us {
-        width: 70%;
+        width: 80%;
     }
 }
 
-@media (min-width: 1199.98px) {}
+@media (min-width: $width-lg) {}

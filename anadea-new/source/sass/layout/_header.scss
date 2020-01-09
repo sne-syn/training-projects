@@ -14,7 +14,7 @@
     display: none;
 }
 
-@media (min-width: 767.98px) {
+@media (min-width: $width-sm) {
 
     .header {
         display: flex;
@@ -26,7 +26,7 @@
     }
 }
 
-@media (min-width: 1199.98px) {
+@media (min-width: $width-lg) {
     .header__logo {
         width: 110px;
         padding: 60px 20px 13px;

@@ -7,7 +7,7 @@
     @include list-reset();
 }
 
-@media (min-width: 767.98px) {
+@media (min-width: $width-sm) {
     .work-process__intro {
         width: 62%;
     }
@@ -21,7 +21,5 @@
 
     .work-process__item {
         width: 31%;
-        font-size: 16px;
-        line-height: 26px;
     }
 }

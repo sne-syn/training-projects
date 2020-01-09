@@ -13,7 +13,7 @@
     padding: 0 20px;
 }
 
-@media (min-width: 767.98px) {
+@media (min-width: $width-sm) {
     .grid__item {
         max-width: 25%;
     }

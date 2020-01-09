@@ -11,14 +11,11 @@
     @include indents();
 }
 
-@media (min-width: 767.98px) {
+@media (min-width: $width-sm) {
     .blockquote__string {
         margin-bottom: 5px;
     }
 }
 
-@media (min-width: 991.98px) {
-    .blockquote__text {
-        width: 250px;
-    }
+@media (min-width: $width-md) {
 }

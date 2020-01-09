@@ -4,16 +4,15 @@
 }
 
 .offices__intro {
-    font-size: 16px;
-    line-height: 26px;
+    width: 95%;
+    text-align: center;
 }
 
 .offices__list {
+    @include list-reset();
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0;
-    list-style: none;
 }
 
 .offices__item {
@@ -38,14 +37,12 @@
     margin-bottom: 0;
 }
 
-@media (min-width: 767.98px) {
+@media (min-width: $width-sm) {
     .offices__intro {
         width: 70%;
         margin-left: auto;
         margin-right: auto;
-        text-align: center;
-        font-size: 19px;
-        line-height: 30px;
+
     }
 
     .office__img--round {

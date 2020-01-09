@@ -52,12 +52,16 @@
     }
 }
 
-@media (min-width: 991.98px) {
+@media (min-width: $width-md) {
     .menu__item {
         margin-right: 30px;
     }
+
+    .menu__text-add {
+        display: inline;
+    }
 }
 
-@media (min-width: 1199.98px) {
+@media (min-width: $width-lg) {
 
 }

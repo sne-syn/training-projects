@@ -19,7 +19,7 @@
     @include indents();
 }
 
-@media (min-width: 767.98px) {
+@media (min-width: $width-sm) {
     .our-experience__list {
         display: flex;
         flex-wrap: wrap;
@@ -34,10 +34,7 @@
 }
 
 
-@media (min-width: 1199.98px) {
-    .our-experience__list {
-        font-size: 18px;
-        line-height: 28px;
-    }
+@media (min-width: $width-lg) {
+
 }
 

@@ -1,11 +1,15 @@
 .color,
 a {
     color: var(--color-white);
-    background-color: var(--color-background-primary);
+    background-color: var(--color-primary);
 }
 
 .color__text-opacity {
     color: var(--color-white-opacity);
+}
+
+.color__text-footer a {
+    color: var(--color-tertiary);
 }
 
 .color__bright {
@@ -16,19 +20,24 @@ a {
     }
 
     &:active {
-        background-color:var(--color-bright-active);
+        background-color: var(--color-bright-active);
+    }
+
+    &:disabled {
+        background-color: var(--color-bright-disabled);
     }
 }
 
-.color__background-secondary {
-    background-color: var(--color-background-secondary);
+.color__secondary {
+    background-color: var(--color-secondary);
 }
 
-.color__background-tertiary {
-    background-color: var(--color-background-tertiary);
+.color__tertiary {
+    background-color: var(--color-tertiary);
 }
 
-@media (min-width: 767.98px) {
+
+@media (min-width: $width-sm) {
     .color__menu-bright {
         background-color: var(--color-bright);
 
@@ -37,7 +46,11 @@ a {
         }
 
         &:active {
-            background-color:var(--color-bright-active);
+            background-color: var(--color-bright-active);
+        }
+
+        &:disabled {
+            background-color: var(--color-bright-disabled);
         }
     }
 }

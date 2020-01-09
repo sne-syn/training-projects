@@ -4,7 +4,6 @@
 
 .impressions__item {
     padding-top: 70px;
-    padding-bottom: 60px;
 }
 
 .impressions__client-img {
@@ -18,17 +17,15 @@
 
 .impressions__note {
     padding-right: 15px;
-    color: var(--color-white-opacity);
 }
 
-@media (min-width: 767.98px) {
+@media (min-width: $width-sm) {
     .impressions__item {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         padding-top: 120px;
-        padding-bottom: 0;
     }
 
     .impressions__client-img {
@@ -41,7 +38,7 @@
     }
 }
 
-@media (min-width: 991.98px) {
+@media (min-width: $width-md) {
     .impressions__client-img {
         margin-top: 20px;
     }

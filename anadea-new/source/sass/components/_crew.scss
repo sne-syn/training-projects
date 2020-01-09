@@ -4,7 +4,7 @@
 }
 
 .crew__member {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .crew__image {
@@ -20,11 +20,7 @@
     width: 148px;
 }
 
-.crew__member-role {
-    color: var(--color-white-opacity);
-}
-
-@media (min-width: 767.98px) {
+@media (min-width: $width-sm) {
     .crew {
         margin-top: 60px;
         margin-bottom: 80px;
