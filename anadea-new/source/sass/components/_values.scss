@@ -1,16 +1,23 @@
 .values {
     min-height: 773px;
     background-image: url("../img/our-values.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .values__blockquote {
-    padding-top: 45px;
+    @include indents();
+    padding-top: 40px;
 }
 
 .values__blockquote-text {
-    width: 90%;
+    @include indents();
+    margin-bottom: 20px;
+}
+
+.values__blockquote-footer {
+    @include indents();
 }
 
 @media (min-width: $width-xs) {

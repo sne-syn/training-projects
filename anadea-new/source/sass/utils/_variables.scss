@@ -25,9 +25,9 @@ $color-bright-disabled:  rgba(221, 129, 129, 0.5);
 
 // css custom properties
 
-:root {
-    --color-white: #{$color-white};
-    --color-white-opacity: #{$color-white-opacity};
+    :root {
+    --color-contrast: #{$color-white};
+    --color-contrast-opacity: #{$color-white-opacity};
     
     --color-primary: #{$color-primary};
     --color-primary-hover: #{$color-primary-hover};

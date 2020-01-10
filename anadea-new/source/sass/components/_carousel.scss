@@ -9,7 +9,6 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding-bottom: 5px;
 }
 
 .carousel__indicator {
@@ -24,15 +23,16 @@
 }
 
 .carousel__track-container {
-    height: 100%;
     position: relative;
+    height: 100%;
     overflow: hidden;
 }
 
 .carousel__track {
     @include indents();
-    position: relative;
+
     height: 100%;
+    position: relative;
     list-style: none;
     transition: transform 250ms ease-in;
 }

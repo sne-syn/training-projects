@@ -1,6 +1,6 @@
 a,
 .color {
-    color: var(--color-white);
+    color: var(--color-contrast);
     background-color: var(--color-primary);
 }
 
@@ -24,18 +24,18 @@ a,
 
 .color__toggle-button.nav__toggle::before,
 .color__toggle-button.nav__toggle::after {
-    background-color: var(--color-white);
+    background-color: var(--color-contrast);
     // color for box-shadow
-    color: var(--color-white);
+    color: var(--color-contrast);
 }
 
 .color__carousel-indicator {
     background-color: transparent;    
-    border-color: var(--color-white);
+    border-color: var(--color-contrast);
 }
 
 .color__carousel-indicator.current-slide {
-    background-color: var(--color-white);
+    background-color: var(--color-contrast);
     opacity: 1;
 }
 
@@ -73,14 +73,14 @@ a,
 }
 
 .color__text-opacity {
-    color: var(--color-white-opacity);
+    color: var(--color-contrast-opacity);
 }
 .color__text-footer a {
     color: var(--color-tertiary);
 }
 
 @media (min-width: $width-sm) {
-    .color__menu-link--bright {
+    .color__menu--bright {
         background-color: var(--color-bright);
 
         &:hover {

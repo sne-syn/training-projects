@@ -1,0 +1,33 @@
+@media (max-width: $width-sm-only) {
+  .js .nav__toggle {
+    display: block;
+  }
+
+  .no-js .nav__toggle {
+    display: none;
+  }
+
+  .no-js ul.menu {
+    display: block;
+  }
+
+  .no-js .carousel__nav {
+    display: none;
+  }
+
+  .no-js .carousel.container {
+    margin: 0;
+    padding: 0;
+    height: 470px;
+  }
+
+  .no-js .carousel__track-container {
+    overflow: auto;
+    padding: 0 20px;
+  }
+
+  .no-js .carousel__slide {
+    position: unset;
+    padding: 20px 0;
+  }
+}
