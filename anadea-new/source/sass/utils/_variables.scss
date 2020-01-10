@@ -15,20 +15,20 @@ $color-primary: #1B1B1B;
 $color-primary-hover: rgba(255, 255, 255, 0.05);
 $color-primary-active: #dc296c;
 
-$color-secondary:#4F4F4F; 
+$color-secondary:#4F4F4F;
 $color-tertiary: #CECECE;
 
 $color-bright: #dc296c;
 $color-bright-hover:#CC1B5D;
 $color-bright-active: #B50B4B;
-$color-bright-disabled:  rgba(221, 129, 129, 0.5);
+$color-bright-disabled: rgba(221, 129, 129, 0.5);
 
 // css custom properties
 
-    :root {
+:root {
     --color-contrast: #{$color-white};
     --color-contrast-opacity: #{$color-white-opacity};
-    
+
     --color-primary: #{$color-primary};
     --color-primary-hover: #{$color-primary-hover};
     --color-primary-active: #{$color-primary-active};
@@ -36,7 +36,7 @@ $color-bright-disabled:  rgba(221, 129, 129, 0.5);
     --color-secondary: #{$color-secondary};
     --color-tertiary: #{$color-tertiary};
 
-    
+
     --color-bright: #{$color-bright};
     --color-bright-hover: #{$color-bright-hover};
     --color-bright-active: #{$color-bright-active};

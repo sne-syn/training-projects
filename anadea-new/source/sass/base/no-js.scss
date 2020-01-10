@@ -16,18 +16,34 @@
   }
 
   .no-js .carousel.container {
-    margin: 0;
-    padding: 0;
-    height: 470px;
+    @include indents();
+    height: auto;
   }
 
   .no-js .carousel__track-container {
-    overflow: auto;
     padding: 0 20px;
   }
 
   .no-js .carousel__slide {
     position: unset;
     padding: 20px 0;
+  }
+}
+
+@media (min-width: $width-sm) {
+  .no-js .carousel__nav {
+    display: none;
+  }
+
+  .no-js .carousel.container {
+    height: auto;
+  }
+
+  .no-js .carousel__slide {
+    position: unset;
+    padding: 50px 0 30px;
+  }
+  .no-js .impressions__text-block {
+    width: 75%;
   }
 }

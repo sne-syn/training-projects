@@ -11,7 +11,8 @@
     border-radius: 50%;
 }
 
-.impressions__quote {
+.impressions__quote,
+.impressions__text {
     @include indents();
 }
 
@@ -30,7 +31,7 @@
 
     .impressions__client-img {
         width: auto;
-        margin-right: 40px;
+        margin-right: 60px;
     }
 
     .impressions__text-block {
