@@ -1,6 +1,7 @@
 .menu {
     @include list-reset();
-    margin: 0 auto 40px;
+    margin: 0 auto;
+    height: 100vh;
 }
 
 .menu__item {
@@ -35,6 +36,7 @@
         align-items: baseline;
         justify-content: space-between;
         padding-top: 20px;
+        height: auto;
     }
 
     .menu__item {

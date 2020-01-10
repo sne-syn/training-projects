@@ -1,4 +1,12 @@
 .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+.header__block {
     position: relative;
     width: auto;
 }
@@ -15,7 +23,7 @@
 }
 
 @media (min-width: $width-sm) {
-    .header {
+    .header__block {
         display: flex;
         flex-direction: row;
         justify-content: space-between;

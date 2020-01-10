@@ -30,6 +30,7 @@
     font-weight: 800;
 }
 
+.typo__menu,
 .typo__text {
     font-size: 16px;
     line-height: 26px;
@@ -70,6 +71,12 @@
     .typo__heading-3 {
         font-size: 20px;
         line-height: 25px;
+    }
+
+    .typo__menu {
+        font-size: 17px;
+        line-height: 20px;
+        text-align: left;  
     }
 
     .typo__text {

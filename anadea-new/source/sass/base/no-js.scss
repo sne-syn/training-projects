@@ -3,12 +3,17 @@
     display: block;
   }
 
+  .no-js .header {
+    position: relative;
+  }
+
   .no-js .nav__toggle {
     display: none;
   }
 
   .no-js ul.menu {
     display: block;
+    height: 100%;
   }
 
   .no-js .carousel__nav {

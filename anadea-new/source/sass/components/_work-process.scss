@@ -8,6 +8,10 @@
 }
 
 @media (min-width: $width-sm) {
+    .work-process {
+        margin-bottom: 80px;
+    }
+
     .work-process__intro {
         width: 62%;
     }
