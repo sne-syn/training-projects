@@ -1,9 +1,11 @@
 .header {
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 20;
+    border: 2px solid white;
+    // transition: all 0.4s;
 }
 
 .header__block {
@@ -27,15 +29,20 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: baseline;
     }
 
-.header__logo {
-    width: auto;
-}
     .header__logo-icon {
-        display: block;
         margin: 0 auto;
+        display: block;
     }
+
+    .header__logo {
+        display: block;
+        width: 110px;
+        padding: 13px 20px;
+    }
+
 }
 
 @media (min-width: $width-lg) {

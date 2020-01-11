@@ -64,46 +64,47 @@
 
     </svg>
     <header class="header color">
-    <div class="header__block container">
-        <a class="header__logo color__logo" href="#">
-            <svg class="header__logo-icon" width="63" height="33">
-                <use xlink:href="#icon-logo"></use>
-            </svg>
-            <svg class="header__logo-name" width="68" height="9">
-                <use xlink:href="#icon-logo-name"></use>
-            </svg>
-            <span class="visually-hidden">Anadea</span>
-        </a>
-        <nav class="nav nav--nojs nav--closed">
-            <button class="nav__toggle color__toggle-button" type="button"><span
-                    class="visually-hidden">Menu</span></button>
-            <ul class="menu menu--closed typo__menu color__menu-border">
-                <li class="menu__item"><span class="menu__link color__menu-link color__menu-link--disabled">About</span>
-                </li>
-                <li class="menu__item"><a class="menu__link color__menu-link" href="#">Services</a>
-                </li>
-                <li class="menu__item menu__item--xs-hidden"><a class="menu__link color__menu-link"
-                        href="#">Industries</a></li>
-                <li class="menu__item"><a class="menu__link color__menu-link" href="#">Team</a>
-                </li>
-                <li class="menu__item"><a class="menu__link color__menu-link" href="#">Blog</a>
-                </li>
-                <li class="menu__item menu__item--sm-hidden"><a class="menu__link color__menu-link"
-                        href="#">Projects</a>
-                </li>
-                <li class="menu__item menu__item--sm-hidden"><a class="menu__link color__menu-link"
-                        href="#">Solutions</a>
-                </li>
-                <li class="menu__item"><a class="menu__link color__menu-link" href="#">Contact
-                        us</a></li>
-                <li class="menu__item menu__item--button"><a class="menu__link  color__menu-link color__menu--bright"
-                        href="#">Get a
-                        <span class="menu__text-add">free</span>
-                        quote</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
+        <div class="header__block container">
+            <a class="header__logo color__logo" href="#">
+                <svg class="header__logo-icon" width="63" height="33">
+                    <use xlink:href="#icon-logo"></use>
+                </svg>
+                <svg class="header__logo-name" width="68" height="9">
+                    <use xlink:href="#icon-logo-name"></use>
+                </svg>
+                <span class="visually-hidden">Anadea</span>
+            </a>
+            <nav class="nav nav--nojs nav--closed">
+                <button class="nav__toggle color__toggle-button" type="button"><span
+                        class="visually-hidden">Menu</span></button>
+                <ul class="menu menu--closed typo__menu color__menu-border">
+                    <li class="menu__item"><span
+                            class="menu__link color__menu-link color__menu-link--disabled">About</span>
+                    </li>
+                    <li class="menu__item"><a class="menu__link color__menu-link" href="#">Services</a>
+                    </li>
+                    <li class="menu__item menu__item--xs-hidden"><a class="menu__link color__menu-link"
+                            href="#">Industries</a></li>
+                    <li class="menu__item"><a class="menu__link color__menu-link" href="#">Team</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link color__menu-link" href="#">Blog</a>
+                    </li>
+                    <li class="menu__item menu__item--sm-hidden"><a class="menu__link color__menu-link"
+                            href="#">Projects</a>
+                    </li>
+                    <li class="menu__item menu__item--sm-hidden"><a class="menu__link color__menu-link"
+                            href="#">Solutions</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link color__menu-link" href="#">Contact
+                            us</a></li>
+                    <li class="menu__item menu__item--button"><a
+                            class="menu__link  color__menu-link color__menu--bright" href="#">Get a
+                            <span class="menu__text-add">free</span>
+                            quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <main>
         <section class="about-us container">
             <h1 class="about-us__heading typo__heading-main">About Us</h1>
@@ -543,11 +544,29 @@
         </div>
         <p class="footer__lang typo color__text-opacity"><a href="#">Russian version</a></p>
     </footer>
+
+    <script type="text/javascript">
+        var screenWidth = window.matchMedia("(min-width: 767.98px)")
+        console.log(screenWidth);
+        var changeLogoOnScroll = function () {
+            var topCoord = document.querySelector('.header');
+            var menu = document.querySelector('.menu');
+            var logo = document.querySelector('.header__logo-icon');
+            var yCoord = window.pageYOffset;
+            if (yCoord < 100 || !screenWidth.matches) {
+                logo.style = "display: block";
+            } else {
+                logo.style = "display: none";
+            }
+        };
+
+        window.addEventListener('scroll', changeLogoOnScroll);
+    </script>
+    <!-- <script src="js/header-grow.js"></script> -->
     <script src="js/menu.js"></script>
     <script src="js/no-js.js"></script>
     <script src="js/slider.js"></script>
-    <!-- <script src="js/scroll.js"></script> -->
-    </body>
+</body>
 </body>
 
 </html>
