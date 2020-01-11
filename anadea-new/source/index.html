@@ -65,7 +65,7 @@
     </svg>
     <header class="header color">
         <div class="header__block container">
-            <a class="header__logo color__logo" href="#">
+            <a class="header__logo-block color__logo" href="#">
                 <svg class="header__logo-icon" width="63" height="33">
                     <use xlink:href="#icon-logo"></use>
                 </svg>
@@ -546,20 +546,34 @@
     </footer>
 
     <script type="text/javascript">
-        var screenWidth = window.matchMedia("(min-width: 767.98px)")
-        console.log(screenWidth);
-        var changeLogoOnScroll = function () {
-            var topCoord = document.querySelector('.header');
-            var menu = document.querySelector('.menu');
-            var logo = document.querySelector('.header__logo-icon');
-            var yCoord = window.pageYOffset;
-            if (yCoord < 100 || !screenWidth.matches) {
-                logo.style = "display: block";
-            } else {
-                logo.style = "display: none";
-            }
-        };
+        X_SMALL_SCREEN = window.matchMedia("(max-width: 765px)");
+        SMALL_SCREEN = window.matchMedia("(min-width: 766px)");
+        LARGE_SCREEN = window.matchMedia("(min-width: 1199px)");
 
+
+        var changeLogoOnScroll = function () {
+            var header = document.querySelector('.header__block');
+            var headerLogo = header.querySelector('.header__logo-block');
+            var icon = header.querySelector('.header__logo-icon');
+            var yCoord = window.pageYOffset;
+
+
+            if (yCoord < 100 && SMALL_SCREEN.matches) {
+                icon.style = "display: block";
+                header.style = "align-items: center";
+                headerLogo.style = "padding: 13px 20px; margin-top: 0;";
+            }
+            if (yCoord < 100 && LARGE_SCREEN.matches) {
+                icon.style = "display: block";
+                header.style = "align-items: center";
+                headerLogo.style = "padding-top: 60px; margin-top: 0;";
+            } 
+            if (yCoord > 100 || X_SMALL_SCREEN.matches)  {
+                icon.style = "display: none;";
+                headerLogo.style = "padding: 13px 20px; margin: 20px 0;";
+                header.style = "align-items: baseline";
+            };
+        }
         window.addEventListener('scroll', changeLogoOnScroll);
     </script>
     <!-- <script src="js/header-grow.js"></script> -->
