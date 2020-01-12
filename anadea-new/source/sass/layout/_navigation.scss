@@ -6,7 +6,7 @@
     @include indents();
     position: absolute;
     right: 20px;
-    top: 10px;
+    top: 15px;
     display: block;
     width: 24px;
     height: 27px;
@@ -22,7 +22,7 @@
     left: 0;
     width: 24px;
     height: 1px;
-    box-shadow: 0 5px 0 0, 0 10px 0 0;
+    box-shadow: 0 6px 0 0, 0 12px 0 0;
 }
 
 .nav__list {
@@ -34,9 +34,9 @@
     content: "";
     position: absolute;
     top: 12px;
-    left: 2px;
+    left: 1px;
     width: 20px;
-    height: 1px;
+    height: 2px;
 }
 
 .nav--opened .nav__toggle::before {
@@ -72,5 +72,13 @@
 
     .nav__toggle {
         display: none;
+    }
+}
+
+@media (min-width: $width-lg) {
+    .nav {
+        @include indents();
+        margin-top: 35px;
+        width: 67%;
     }
 }
