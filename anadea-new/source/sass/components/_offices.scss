@@ -42,6 +42,10 @@
         margin-right: auto;
     }
 
+    .offices__item.grid__item {
+        align-self: baseline;
+    }
+
     .offices__item--bel {
         order: 1;
     }
@@ -52,6 +56,10 @@
 }
 
 @media (min-width: $width-md) {
+    .offices__intro {
+        width: 60%;
+    }
+
     .offices__item.grid__item {
         padding: 0;
     }
