@@ -25,3 +25,9 @@
         margin-bottom: 80px;
     }
 }
+
+@media (min-width: $width-lg) {
+    .crew__image {
+        width: 230px;
+    }
+}

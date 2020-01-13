@@ -80,7 +80,7 @@ a,
 }
 
 @media (min-width: $width-sm) {
-    .color__menu--bright {
+    .color__menu-link--bright {
         background-color: var(--color-bright);
 
         &:hover {
