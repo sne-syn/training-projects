@@ -1,14 +1,5 @@
-.our-experience {
-    @include indents();
-}
-
 .our-experience__heading {
-    @include indents();
     margin-bottom: 35px;
-}
-
-.our-experience__list {
-    @include list-reset();
 }
 
 .our-experience__item {
@@ -16,7 +7,7 @@
 }
 
 .our-experience__item h3 {
-    @include indents();
+    margin-bottom: 20px;
 }
 
 @media (min-width: $width-sm) {
@@ -33,8 +24,9 @@
     }
 }
 
-
 @media (min-width: $width-lg) {
-
+    .our-experience__heading {
+        margin-bottom: 40px;
+    }
 }
 

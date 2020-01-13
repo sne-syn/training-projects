@@ -6,6 +6,7 @@
     var LARGE_SCREEN = window.matchMedia("(min-width: 1199px)");
 
     var changeLogoOnScroll = function () {
+        var header = document.querySelector('header__block');
         var headerLogo = document.querySelector('.header__logo-block');
         var icon = headerLogo.querySelector('.header__logo-icon');
         var nav = document.querySelector('.nav');
@@ -23,6 +24,7 @@
             headerLogo.style = "padding: 9px 0 21px";
             icon.style = "display: none;";
             nav.style = "margin: 0";
+            header.style = "margin-top: 20px; margin-bottom: 20px;";
         }
     };
     

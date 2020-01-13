@@ -17,3 +17,17 @@ body {
 a {
     @include link-reset;
 }
+
+h1,
+h2,
+h3,
+p,
+span,
+li,
+blockquote {
+    @include indents();
+}
+
+ul {
+    @include list-reset();
+}

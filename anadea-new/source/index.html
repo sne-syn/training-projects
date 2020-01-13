@@ -446,10 +446,10 @@
                     <li class="office__item grid__item">
                         <picture>
                             <source media="(min-width:  767.98px)" srcset="img/ukraine-tablet.png">
-                            <img src="img/ukraine.png" class="office__img office__img--round" alt="Flag of Ukraine">
+                            <img src="img/ukraine.png" class="office__img" width="87" height="87" alt="Flag of Ukraine">
                         </picture>
                         <span class="office__center typo__heading-3">Ukraine</span>
-                        <p class="office__direction">Dnipro.<br> Sholom-Aleykhem Street, 4/26</p>
+                        <p class="office__direction typo__text">Dnipro.<br> Sholom-Aleykhem Street, 4/26</p>
                     </li>
                     <li class="offices__item offices__item--bel grid__item">
                         <picture>
@@ -457,7 +457,7 @@
                             <img src="img/belarus.png" class="office__img" width="87" height="87" alt="Flag of Belarus">
                         </picture>
                         <span class="office__center typo__heading-3">Belarus</span>
-                        <p class="office__direction">Minsk.<br> Lisy Chaikinoy st 14,
+                        <p class="office__direction typo__text">Minsk. Lisy Chaikinoy st 14,
                             Grodno. The 1 of May st, 19</p>
                     </li>
                     <li class="offices__item grid__item">
@@ -466,8 +466,7 @@
                             <img src="img/spain.png" class="office__img" width="87" height="87" alt="Flag of Spain">
                         </picture>
                         <span class="office__center typo__heading-3">Spain</span>
-                        <p class="office__direction">Alicante.<br>
-                            Calle Clara Campoamor, 12</p>
+                        <p class="office__direction typo__text">Alicante. Calle Clara Campoamor, 12</p>
                     </li>
                     <li class="offices__item offices__item--usa grid__item">
                         <picture>
@@ -476,8 +475,7 @@
                                 alt="Flag of United States of America">
                         </picture>
                         <span class="office__center typo__heading-3">USA</span>
-                        <p class="office__direction">Las Vegas.<br>
-                            Calle Clara Campoamor, 12</p>
+                        <p class="office__direction typo__text">Las Vegas. Calle Clara Campoamor, 12</p>
                     </li>
                 </ul>
             </div>
@@ -542,15 +540,16 @@
             <p class="footer__copyright color__text-opacity typo__text-min">© 2000-2018 Anadea Inc.<br> All rights
                 reserved</p>
         </div>
-        <p class="footer__lang typo color__text-opacity"><a href="#">Russian version</a></p>
+        <p class="footer__lang typo color"><a href="#">Russian version</a></p>
     </footer>
 
     <script type="text/javascript">
-        X_SMALL_SCREEN = window.matchMedia("(max-width: 765px)");
-        SMALL_SCREEN = window.matchMedia("(min-width: 766px)");
-        LARGE_SCREEN = window.matchMedia("(min-width: 1199px)");
+        var X_SMALL_SCREEN = window.matchMedia("(max-width: 765px)");
+        var SMALL_SCREEN = window.matchMedia("(min-width: 766px)");
+        var LARGE_SCREEN = window.matchMedia("(min-width: 1199px)");
 
         var changeLogoOnScroll = function () {
+            var header = document.querySelector('.header__block');
             var headerLogo = document.querySelector('.header__logo-block');
             var icon = headerLogo.querySelector('.header__logo-icon');
             var nav = document.querySelector('.nav');
@@ -558,18 +557,28 @@
 
             if (yCoord < 100 && SMALL_SCREEN.matches) {
                 icon.style = "display: block";
+                header.style = "margin-top: 0; margin-bottom: 0;";
             }
             if (yCoord < 100 && LARGE_SCREEN.matches) {
-                headerLogo.style = 'padding: 84px 20px 23px;'
+                headerLogo.style = 'padding: 84px 20px 23px';
                 icon.style = "display: block";
-                nav.style = "margin-top: 35px;"
+                nav.style = "margin-top: 35px";
+                header.style = "margin-top: 0; margin-bottom: 0;";
             }
-            if (yCoord > 100 || X_SMALL_SCREEN.matches) {
-                headerLogo.style = 'padding: 9px 0 21px;'
+            if (yCoord < 100 && X_SMALL_SCREEN.matches) {
+                headerLogo.style = "padding: 9px 0 21px";
                 icon.style = "display: none;";
-                nav.style = "margin: 0;"
-            };
-        }
+                nav.style = "margin: 0";
+                header.style = "margin-top: 0; margin-bottom: 0;";
+            }
+            if (yCoord > 100) {
+                headerLogo.style = "padding: 9px 0 21px";
+                icon.style = "display: none;";
+                nav.style = "margin: 0";
+                header.style = "margin-top: 20px; margin-bottom: 20px;";
+            }
+        };
+
         window.addEventListener('scroll', changeLogoOnScroll);
     </script>
     <!-- <script src="js/header-grow.js"></script> -->

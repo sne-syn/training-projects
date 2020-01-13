@@ -1,10 +1,10 @@
 .crew {
-    margin-top: 40px;
-    margin-bottom: 60px;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 .crew__member {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .crew__image {
@@ -15,14 +15,13 @@
 
 .crew__member-role,
 .crew__member-name {
-    @include indents();
     display: block;
     width: 148px;
 }
 
 @media (min-width: $width-sm) {
     .crew {
-        margin-top: 60px;
+        margin-top: 70px;
         margin-bottom: 80px;
     }
 }

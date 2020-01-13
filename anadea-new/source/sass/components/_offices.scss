@@ -1,4 +1,3 @@
-
 .offices {
     text-align: center;
 }
@@ -9,7 +8,6 @@
 }
 
 .offices__list {
-    @include list-reset();
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -22,19 +20,19 @@
     margin-bottom: 65px;
 }
 
+.office__direction {
+    text-align: center;
+}
+
 .office__img {
     display: block;
     border-radius: 50%;
     margin: 0 auto 19px;
 }
 
-.office__img--round {
-    margin-bottom: 0;
-}
-
 .office__center {
     display: block;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 @media (min-width: $width-sm) {
@@ -42,22 +40,26 @@
         width: 70%;
         margin-left: auto;
         margin-right: auto;
-
-    }
-
-    .office__img--round {
-        width: 87px;
-        height: 87px;
-        margin-bottom: 19px;
     }
 
     .offices__item--bel {
         order: 1;
     }
 
-
     .offices__item--usa {
         order: 2;
     }
+}
 
+@media (min-width: $width-md) {
+    .offices__item.grid__item {
+        padding: 0;
+    }
+}
+
+@media (min-width: $width-lg) {
+    .offices__item.grid__item {
+        align-self: baseline;
+        padding: 0 20px;
+    }
 }

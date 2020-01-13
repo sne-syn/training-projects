@@ -1,9 +1,5 @@
-.impressions__list {
-    @include list-reset();
-}
-
 .impressions__item {
-    padding-top: 70px;
+    padding-top: 80px;
 }
 
 .impressions__client-img {
@@ -11,9 +7,12 @@
     border-radius: 50%;
 }
 
-.impressions__quote,
+.impressions__quote {
+    padding-bottom: 20px;
+}
+
 .impressions__text {
-    @include indents();
+    padding-bottom: 20px;
 }
 
 .impressions__note {
@@ -46,5 +45,20 @@
 
     .impressions__text-block {
         width: 35%;
+    }
+}
+
+@media (min-width: $width-md) {
+    .impressions__item {
+        padding-top: 130px;
+    }
+    .impressions__client-img {
+        width: 120px;
+        height: 120px;
+        margin-top: 5px;
+    }
+
+    .impressions__text-block {
+        width: 45%;
     }
 }

@@ -1,4 +1,3 @@
-
 .carousel.container {
     position: relative;
     height: 640px;
@@ -29,11 +28,8 @@
 }
 
 .carousel__track {
-    @include indents();
-
     height: 100%;
     position: relative;
-    list-style: none;
     transition: transform 250ms ease-in;
 }
 
@@ -42,4 +38,17 @@
     top: 0;
     bottom: 0;
     width: 100%;
+}
+
+@media (min-width: $width-lg) {
+    .carousel.container {
+        position: relative;
+        height: 840px;
+        padding-top: 60px;
+    }
+
+    .carousel__indicator {
+        width: 29px;
+        height: 29px;
+    }
 }

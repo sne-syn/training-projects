@@ -1,5 +1,4 @@
 .menu {
-    @include list-reset();
     margin: 0 auto;
     height: 100vh;
 }
@@ -29,7 +28,6 @@
 
 @media (min-width: $width-sm) {
     .menu {
-        @include indents();
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -39,7 +37,7 @@
     }
 
     .menu__item {
-        @include list-reset();
+        padding: 0;
         border: none;
     }
 

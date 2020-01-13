@@ -7,17 +7,11 @@
 }
 
 .values__blockquote {
-    @include indents();
-    padding-top: 40px;
+    padding-top: 45px;
 }
 
 .values__blockquote-text {
-    @include indents();
     margin-bottom: 20px;
-}
-
-.values__blockquote-footer {
-    @include indents();
 }
 
 @media (min-width: $width-xs) {
@@ -52,5 +46,13 @@
 @media (min-width: $width-lg) {
     .values {
         background-position: 0 0;
+    }
+
+    .values__blockquote {
+        padding-top: 180px;
+    }
+
+    .values__blockquote-text {
+        line-height: 48px;
     }
 }
