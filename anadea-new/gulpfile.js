@@ -101,7 +101,7 @@ gulp.task("html", function () {
 gulp.task("compress", function (done) {
   gulp.src("source/js/*.js")
     .pipe(minify())
-    .pipe(gulp.dest("build/js"))
+    .pipe(gulp.dest("build/js"));
   done();
 });
 
