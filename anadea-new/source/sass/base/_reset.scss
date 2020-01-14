@@ -1,21 +1,21 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
-    // border: 1px solid red;
+  box-sizing: inherit;
+  // border: 1px solid red;
 }
 
 body {
-    @include indents();
-    box-sizing: border-box;
+  @include indents();
+  box-sizing: border-box;
 }
 
 a {
-    @include link-reset;
+  @include link-reset;
 }
 
 h1,
@@ -25,9 +25,9 @@ p,
 span,
 li,
 blockquote {
-    @include indents();
+  @include indents();
 }
 
 ul {
-    @include list-reset();
+  @include list-reset();
 }

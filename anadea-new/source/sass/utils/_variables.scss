@@ -26,19 +26,19 @@ $color-bright-disabled: rgba(221, 129, 129, 0.5);
 // css custom properties
 
 :root {
-    --color-contrast: #{$color-white};
-    --color-contrast-opacity: #{$color-white-opacity};
+  --color-contrast: #{$color-white};
+  --color-contrast-opacity: #{$color-white-opacity};
 
-    --color-primary: #{$color-primary};
-    --color-primary-hover: #{$color-primary-hover};
-    --color-primary-active: #{$color-primary-active};
+  --color-primary: #{$color-primary};
+  --color-primary-hover: #{$color-primary-hover};
+  --color-primary-active: #{$color-primary-active};
 
-    --color-secondary: #{$color-secondary};
-    --color-tertiary: #{$color-tertiary};
+  --color-secondary: #{$color-secondary};
+  --color-tertiary: #{$color-tertiary};
 
 
-    --color-bright: #{$color-bright};
-    --color-bright-hover: #{$color-bright-hover};
-    --color-bright-active: #{$color-bright-active};
-    --color-bright-disabled: #{$color-bright-disabled};
+  --color-bright: #{$color-bright};
+  --color-bright-hover: #{$color-bright-hover};
+  --color-bright-active: #{$color-bright-active};
+  --color-bright-disabled: #{$color-bright-disabled};
 }

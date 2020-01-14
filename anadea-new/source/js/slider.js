@@ -55,7 +55,5 @@
 
         moveToSlide(track, currentSlide, targetSlide);
         updateDots(currentDot, targetDot);
-
     });
-
 })();

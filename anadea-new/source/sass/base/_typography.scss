@@ -1,115 +1,114 @@
 .typo {
-    font-size: 14px;
-    line-height: 22px;
-    font-family: "StemText", Arial, sans-serif;
-    font-style: normal;
-    font-weight: 400;
+  font-family: "StemText", Arial, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 .typo__logo {
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .typo__heading-main {
-    font-size: 36px;
-    line-height: 44px;
-    font-weight: 800;
-    text-align: center;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 44px;
+  text-align: center;
 }
 
 .typo__heading-2 {
-    font-size: 28px;
-    line-height: 36px;
-    font-weight: 800;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 36px;
 }
 
 .typo__heading-3 {
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 800;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 26px;
 }
 
 .typo__menu,
 .typo__text {
-    font-size: 16px;
-    line-height: 26px;
-    text-align: left;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
 }
 
 .typo__text-footer {
-    font-size: 16px;
-    line-height: 22px;
-    text-align: left;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
 }
 
 .typo__text-min {
-    font-size: 12px;
-    line-height: 18px;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .typo__hidden {
-    font-size: 0;
+  font-size: 0;
 }
 
 @media (min-width: $width-sm) {
-    .typo {
-        font-size: 16px;
-        line-height: 24px;
-    }
+  .typo {
+    font-size: 16px;
+    line-height: 24px;
+  }
 
-    .typo__heading-main {
-        font-size: 40px;
-        line-height: 48px;
-    }
+  .typo__heading-main {
+    font-size: 40px;
+    line-height: 48px;
+  }
 
-    .typo__heading-2 {
-        font-size: 30px;
-        line-height: 40px;
-    }
+  .typo__heading-2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
 
-    .typo__heading-3 {
-        font-size: 20px;
-        line-height: 25px;
-    }
+  .typo__heading-3 {
+    font-size: 20px;
+    line-height: 25px;
+  }
 
-    .typo__menu {
-        font-size: 17px;
-        line-height: 20px;
-        text-align: left;  
-    }
+  .typo__menu {
+    font-size: 17px;
+    line-height: 20px;
+    text-align: left;
+  }
 
-    .typo__text {
-        font-size: 18px;
-        line-height: 28px;
-        text-align: left;
-    }
+  .typo__text {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: left;
+  }
 }
 
 @media (min-width: $width-lg) {
-    .typo {
-        font-size: 18px;
-        line-height: 28px;
-    }
+  .typo {
+    font-size: 18px;
+    line-height: 28px;
+  }
 
-    .typo__heading-main {
-        font-size: 56px;
-        line-height: 64px;
-    }
+  .typo__heading-main {
+    font-size: 56px;
+    line-height: 64px;
+  }
 
-    .typo__heading-2 {
-        font-size: 40px;
-        line-height: 42px;
-    }
+  .typo__heading-2 {
+    font-size: 40px;
+    line-height: 42px;
+  }
 
-    .typo__heading-3 {
-        font-size: 22px;
-        line-height: 32px;
-    }
+  .typo__heading-3 {
+    font-size: 22px;
+    line-height: 32px;
+  }
 
-    .typo__text {
-        font-size: 22px;
-        line-height: 34px;
-    }
-
+  .typo__text {
+    font-size: 22px;
+    line-height: 34px;
+  }
 }

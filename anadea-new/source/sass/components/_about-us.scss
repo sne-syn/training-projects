@@ -1,38 +1,38 @@
 .about-us {
-    margin: 190px 0 115px;
+  margin: 190px 0 115px;
 }
 
 .about-us__heading {
-    margin: 0 auto;
-    padding-bottom: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
 }
 
 .about-us__text {
-    margin: 0 auto;
-    width: 95%;
-    text-align: center;
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @media (min-width: $width-sm) {
-    .about-us {
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .about-us {
+    margin-right: auto;
+    margin-left: auto;
+  }
 
-    .about-us__heading {
-        padding-bottom: 40px;
-    }
+  .about-us__heading {
+    padding-bottom: 40px;
+  }
 }
 
 @media (min-width: $width-md) {
-    .about-us {
-        width: 80%;
-    }
+  .about-us {
+    width: 80%;
+  }
 }
 
 @media (min-width: $width-lg) {
-    .about-us {
-        width: 80%;
-        margin-top: 330px;
-    }
+  .about-us {
+    width: 80%;
+    margin-top: 330px;
+  }
 }
