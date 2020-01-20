@@ -15,7 +15,7 @@ body {
 }
 
 a {
-  @include link-reset;
+  @include link-reset();
 }
 
 h1,

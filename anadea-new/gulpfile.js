@@ -115,6 +115,9 @@ gulp.task('htmlmin', function () {
     .pipe(htmlmin({
       collapseWhitespace: true
     }))
+    .pipe(rename({
+      suffix: '-min'
+    }))
     .pipe(gulp.dest('build'));
 });
 
