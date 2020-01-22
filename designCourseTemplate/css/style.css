@@ -88,9 +88,10 @@ body::before {
 }
 
 .text-block {
+    display: flex;
+    flex-direction: column;
     grid-column: -9 / -16;
-    grid-row: 6 / 12;
-    padding-right: 25px;
+    grid-row: 6 / 13;
     padding-left: 65px;
     padding-top: 82px;
     text-align: right;
@@ -101,6 +102,14 @@ body::before {
     padding: 0;
     font-size: 27px;
     line-height: 50px;
+}
+
+.text-block__text--small {
+    align-self: flex-end;
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    text-align: right;
 }
 
 .block-left {
@@ -140,7 +149,7 @@ body::before {
     padding: 5px 0 20px;
     font-weight: 800;
     line-height: 30px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .blockquote__footer {
