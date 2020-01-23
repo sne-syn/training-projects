@@ -1,9 +1,11 @@
 html {
     position: relative;
     min-height: 100%;
+    box-sizing: border-box;
 }
 
 body {
+    min-width: 1100px;
     position: relative;
     margin: 0;
     padding: 0;
@@ -11,6 +13,7 @@ body {
     height: 100%;
     font-family: neusa-next-std, sans-serif;
     color: #1d2326;
+    border: 1px dashed red;
 }
 
 body::before {
@@ -44,14 +47,14 @@ body::after {
 }
 
 .container {
+    min-width: 1100px;
     margin: 0 auto;
-    margin-top: 0;
-    padding: 50px 100px 0;
+    padding-top: 50px;
     display: grid;
     grid-template-columns: repeat(18, 1fr);
     grid-template-rows: repeat(25, 55px);
-    padding-right: calc(50vw - 558px);
-    padding-left: calc(50vw - 558px);
+    padding-right: calc(50vw - 567px);
+    padding-left: calc(50vw - 567px);
 }
 
 .main-title {
@@ -72,7 +75,7 @@ body::after {
 }
 
 .main-title-bottom {
-    font-size: 153px;
+    font-size: 148px;
     font-weight: 800;   
     line-height: 65px;
 }
