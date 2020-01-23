@@ -13,12 +13,7 @@ body {
     color: #1d2326;
 }
 
-.decorate {
-    position: relative;
-    height: 100%;
-}
-
-.decorate::before {
+body::before {
     position: absolute;
     top: 0;
     left: calc(50vw - 530px);
@@ -29,7 +24,7 @@ body {
     z-index: 0;
 }
 
-body::before {
+body::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -41,8 +36,10 @@ body::before {
     background-image: url(../img/davide-pietralunga-5Y50Ur6ltlI-unsplash.jpg);
     background-size: contain;
     background-repeat: no-repeat;
+    -webkit-clip-path: polygon(0 69%, 0 22%, 84% 100%, 30% 100%);
     clip-path: polygon(0 69%, 0 22%, 84% 100%, 30% 100%);
     z-index: 6;
+    -webkit-filter: brightness(0.2);
     filter: brightness(0.2);
 }
 
@@ -93,7 +90,6 @@ body::before {
     grid-column: -9 / -16;
     grid-row: 6 / 13;
     padding-left: 87px;
-    padding-top: 20px;
     text-align: right;
 }
 
