@@ -72,9 +72,9 @@ body::after {
 }
 
 .main-title-bottom {
-    font-size: 146px;
-    line-height: 54px;
-    font-weight: 800;
+    font-size: 153px;
+    font-weight: 800;   
+    line-height: 65px;
 }
 
 .main-image {
