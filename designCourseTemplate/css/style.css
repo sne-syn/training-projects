@@ -13,7 +13,6 @@ body {
     height: 100%;
     font-family: neusa-next-std, sans-serif;
     color: #1d2326;
-    border: 1px dashed red;
 }
 
 body::before {

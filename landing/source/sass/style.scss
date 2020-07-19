@@ -1,0 +1,156 @@
+@import 'normalize.scss';
+
+// Mixins
+@mixin font-lato {
+    font-family: 'Lato', sans-serif;
+}
+
+@mixin font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.section-outer {}
+
+.section-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 1180px;
+    height: 100vh;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+.section-header {
+    position: relative;
+    color: $color-white;
+    background-color: $color-black;
+    background: url('../image/photo-of-people-using-laptop-s-3182759.jpg') no-repeat 50% 50%;
+    background-size: cover;
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: 5;
+        right: 0;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: rgba(20, 39, 41, 0.7);
+    }
+
+    &-logo {
+        padding-top: 35px;
+        flex-shrink: 1;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    &-content {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    &-wrapper {
+        margin: 0 auto;
+
+        &_title {
+            margin-bottom: 16px;
+            font-weight: bold;
+            font-size: 56px;
+            line-height: 60px;
+            text-align: center;
+        }
+
+        &_subtitle {
+            @include font-montserrat;
+            width: 70%;
+            margin: 0 auto 44px;
+            font-size: 18px;
+            line-height: 32px;
+            text-align: center;
+        }
+
+        &_form {
+            display: flex;
+
+            &-input {
+                padding-right: 40px;
+
+                input {
+                    @include font-montserrat;
+                    margin: 0;
+                    padding: 16px 20px;
+                    flex-grow: 1;
+                    width: 100%;
+                    font-size: 16px;
+                    color: $color-white;
+                    background-color: rgba($color-black, 0.3);
+                    border: none;
+                    border-radius: 4px;
+
+                    &::placeholder {
+                        color: $color-white;
+                    }
+                }
+            }
+
+            &-button {
+                button {
+                    @include font-montserrat;
+                    margin: 0;
+                    padding: 16px 20px;
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: $color-white;
+                    background: linear-gradient(to right, #fe9858, #fe4fa7);
+                    border: none;
+                    border-radius: 4px;
+                }
+
+            }
+        }
+    }
+}
+
+.section-promo {
+    &-1 {
+        &_content {}
+    }
+
+
+
+    .title {}
+
+    .subtitle {}
+
+    .text {}
+
+    .section-promo-1_video {        & img.video {
+            background: url('../image/photo-of-people-using-laptop-s-3182759.jpg') no-repeat 50% 50%;
+            background-size: 50px 50px;
+        }}
+
+    .section-promo-2 {
+
+    }
+
+
+
+}

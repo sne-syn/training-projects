@@ -1,3 +1,7 @@
+.js-focus-visible:focus:not(.focus-visible) {
+  outline: none;
+}
+
 .carousel.container {
   position: relative;
   height: 640px;
